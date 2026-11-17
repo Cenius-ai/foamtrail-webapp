@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foamtrail"
+version = "1.0.0"
+description = "FoamTrail — an espresso dial-in log: beans, shots and a grind-versus-yield terminal chart"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+foamtrail = "foamtrail:main"
+
+[tool.setuptools]
+py-modules = ["foamtrail"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

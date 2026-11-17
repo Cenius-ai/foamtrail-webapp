@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+
+# Local FoamTrail state (never commit a barista's log)
+.foamtrail/
+.foamtrail-demo/
+state.json
+
+# Editors / OS
+.venv/
+venv/
+.env
+.DS_Store
